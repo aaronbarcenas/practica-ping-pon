@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  height: 400px;
+  padding: 1rem;
+  border: 2px solid green;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation: move 10s infinite;
+          animation: move 10s infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 375px;
+    left: 375px;
+  }
+  25% {
+    top: 175px;
+    left: 1rem;
+  }
+  50% {
+    top: 0px;
+    left: 375px;
+  }
+  75% {
+    top: 175px;
+    left: 775px;
+  }
+  100% {
+    top: 375px;
+    left: 375px;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 375px;
+    left: 375px;
+  }
+  25% {
+    top: 175px;
+    left: 1rem;
+  }
+  50% {
+    top: 0px;
+    left: 375px;
+  }
+  75% {
+    top: 175px;
+    left: 775px;
+  }
+  100% {
+    top: 375px;
+    left: 375px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
